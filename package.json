@@ -1,0 +1,39 @@
+{
+  "name": "vitestpreastory",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "vitest --ui"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "preact": "^10.10.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@preact/preset-vite": "^2.3.0",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/preact": "^6.5.10",
+    "@storybook/testing-library": "0.0.13",
+    "@testing-library/preact": "^3.2.2",
+    "@types/prop-types": "^15.7.5",
+    "@vitest/ui": "^0.22.1",
+    "babel-loader": "^8.2.5",
+    "core-js": "^3.24.1",
+    "happy-dom": "^6.0.4",
+    "jsdom": "^20.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7",
+    "vitest": "0.22.1"
+  }
+}
