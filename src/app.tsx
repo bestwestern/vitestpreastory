@@ -13,13 +13,14 @@ export function App() {
           <h4>Contentfds</h4>
         </Accordion>
         <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
+          <img src="/imgs/vite.svg" class="logo" alt="Vite logo" />
         </a>
         <a href="https://preactjs.com" target="_blank">
           <img src={preactLogo} class="logo preact" alt="Preact logo" />
         </a>
       </div>
-      <h1>Vite + Preact</h1>
+      <h1>9</h1>
+      <h1>Vite + Preact v6</h1>
       <div class="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count issfsfdsd {count}
