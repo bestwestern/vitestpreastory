@@ -29,6 +29,7 @@
     "@types/prop-types": "^15.7.5",
     "@vitest/ui": "^0.22.1",
     "babel-loader": "^8.2.5",
+    "vite-plugin-compress": "2.1.1",
     "core-js": "^3.24.1",
     "happy-dom": "^6.0.4",
     "jsdom": "^20.0.0",
