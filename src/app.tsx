@@ -2,16 +2,20 @@ import { useState } from "preact/hooks";
 import preactLogo from "./assets/preact.svg";
 import "./app.css";
 import Accordion from "./accordion";
-
 export function App() {
   const [count, setCount] = useState(0);
-
+  const click = () => {
+    const worker = new Worker(new URL("./worker.js", import.meta.url));
+    worker.postMessage([3, 4]);
+    console.log("Message posted to worker");
+  };
   return (
     <>
       <div>
         <Accordion title="titles">
           <h4>Contentfds</h4>
         </Accordion>
+        <button onClick={click}>worker</button>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/imgs/vite.svg" class="logo" alt="Vite logo" />
         </a>

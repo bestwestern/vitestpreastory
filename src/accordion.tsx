@@ -1,10 +1,10 @@
 import { h } from "preact";
 import { useState } from "preact/hooks";
 import "./accordion.css";
-type AccordionProps = {
+interface AccordionProps {
   title: string;
   children: preact.ComponentChildren;
-};
+}
 const Accordion = ({ title, children }: AccordionProps) => {
   const [show, setShow] = useState(false);
   const onAccordionClick = () => {
