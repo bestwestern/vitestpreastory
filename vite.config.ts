@@ -1,9 +1,11 @@
 import { defineConfig } from "vitest/config";
 import preact from "@preact/preset-vite";
 import { VitePWA } from "vite-plugin-pwa";
+import compress from "vite-plugin-compress";
 import { registerRoute } from "workbox-routing";
 export default defineConfig({
   plugins: [
+    compress.default({ exclude: ["**.svg"] }),
     VitePWA({
       registerType: "autoUpdate",
       workbox: {
