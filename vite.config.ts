@@ -17,7 +17,7 @@ export default defineConfig({
           },
           {
             handler: "CacheFirst",
-            urlPattern: /\/imgs\/.*\/*.svg/,
+            urlPattern: /\/imgs\/.*\/*.*/,
             method: "GET",
           },
         ],
