@@ -5,7 +5,7 @@ interface AccordionProps {
   title: string;
   children: preact.ComponentChildren;
 }
-const Accordion = ({ title, children }: AccordionProps) => {
+const accordion = ({ title, children }: AccordionProps) => {
   const [show, setShow] = useState(false);
   const onAccordionClick = () => {
     setShow(!show);
@@ -24,4 +24,4 @@ const Accordion = ({ title, children }: AccordionProps) => {
   );
 };
 
-export default Accordion;
+export default accordion;
